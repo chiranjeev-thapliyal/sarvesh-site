@@ -59,6 +59,7 @@ body {
 }
 
 .navbar__list--item > a{
+  font-family: "Montserrat", sans-serif;
   color: var(--secondary-color);
   font-weight: 700;
 }
