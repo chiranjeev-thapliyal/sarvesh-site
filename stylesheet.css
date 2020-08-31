@@ -356,6 +356,55 @@ div#tns1-iw.tns-inner{
   color: var(--secondary-color);
 }
 
+/* Demo testing */
+
+.modal__Box{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.773);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.modal__Box--content{
+/* width: 50%; */
+/* height: 50%; */
+  background-color: white;
+  position: relative;
+  padding: 1rem;
+}
+
+.modal__Box--content > h2{
+  text-transform: uppercase;
+  display: block;
+  color: var(--primary-color);
+}
+
+.modal__Box--content-active-img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal__Box--content-active-img > img{
+  width: 100%;
+  height: 100%;
+}
+
+.modal__Box--content > img{
+  position: absolute;
+  top: -1rem;
+  right: -1rem;
+  cursor: pointer;
+}
+
+/* Demo testing */
+
+
+
 .footer {
   display: flex;
   height: 10vh;

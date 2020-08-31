@@ -13,6 +13,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css"
     />
+
   </head>
   <body>
     <div class="navbar">
@@ -123,7 +124,8 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
             itaque praesentium cupiditate neque nesciunt aliquam. Recusandae,
             distinctio dolores deleniti vel incidunt doloribus consectetur ex
-            corporis, amet, minima ullam cum consequatur... <span class="continue-reading">continue reading</span>
+            corporis, amet, minima ullam cum consequatur...
+            <span class="continue-reading">continue reading</span>
           </p>
         </div>
         <div class="box-2">
@@ -133,8 +135,19 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
             itaque praesentium cupiditate neque nesciunt aliquam. Recusandae,
             distinctio dolores deleniti vel incidunt doloribus consectetur ex
-            corporis, amet, minima ullam cum consequatur... <span class="continue-reading">continue reading</span>
+            corporis, amet, minima ullam cum consequatur...
+            <span class="continue-reading">continue reading</span>
           </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="modal__Box">
+      <div class="modal__Box--content">
+        <h2>The title for the image goes here</h2>
+        <img class="close-modal" src="./images/close.png" alt="">
+        <div class="modal__Box--content-active-img">
+          <!-- <img class="modal-active-image" src="./images/full-photo.png" alt="" srcset=""> -->
         </div>
       </div>
     </section>
@@ -145,10 +158,10 @@
           <h1>Media Resources - Photos</h1>
         </div>
         <div class="grid">
-          <img src="./images/photo-thumbnail.png" alt="" />
-          <img src="./images/photo-thumbnail.png" alt="" />
-          <img src="./images/photo-thumbnail.png" alt="" />
-          <img src="./images/photo-thumbnail.png" alt="" />
+          <img class="grid--img image-slider" id="pic-0" src="./images/full-photo.png" alt="" onclick="changeModal(this)" />
+          <img class="grid--img image-slider" id="pic-1" src="./images/custmr_logo01.png" alt="" onclick="changeModal(this)" />
+          <img class="grid--img image-slider" id="pic-2" src="./images/full-photo.png" alt="" onclick="changeModal(this)" />
+          <img class="grid--img image-slider" id="pic-3" src="./images/custmr_logo01.png" alt="" onclick="changeModal(this)" />
         </div>
         <div class="content">
           <p>
@@ -164,10 +177,10 @@
           <h1>Media Resources - Videos</h1>
         </div>
         <div class="grid">
-          <img src="./images/video-thumbnail.png" alt="" />
-          <img src="./images/video-thumbnail.png" alt="" />
-          <img src="./images/video-thumbnail.png" alt="" />
-          <img src="./images/video-thumbnail.png" alt="" />
+          <img class="grid--img video-slider" id="video-0" src="./images/full-photo.png" alt="" onclick="changeModal(this)" />
+          <img class="grid--img video-slider" id="video-1" src="./images/custmr_logo01.png" alt="" onclick="changeModal(this)" />
+          <img class="grid--img video-slider" id="video-2" src="./images/full-photo.png" alt="" onclick="changeModal(this)" />
+          <img class="grid--img video-slider" id="video-3" src="./images/custmr_logo01.png" alt="" onclick="changeModal(this)" />
         </div>
         <div class="content">
           <p>
@@ -194,6 +207,7 @@
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script src="./script.js"></script>
     <script>
       let slider = tns({
         container: ".header",
