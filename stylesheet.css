@@ -1,0 +1,336 @@
+/* Default CSS Settings */
+*,
+*::after,
+*::before {
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root {
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+  font-size: 7rem;
+  font-family: "Montserrat", sans-serif;
+  --primary-color: green;
+  --secondary-color: #808088;
+}
+
+/* ----------------------------------------- Navbar area starts here --------------------------------------- */
+
+.navbar {
+  height: 8rem;
+  box-shadow: 0.5px 0 10px 0px var(--secondary-color);
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255),
+    rgb(194, 194, 194)
+  );
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.navbar__list {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  text-transform: uppercase;
+}
+
+.navbar__list--item {
+  color: var(--secondary-color);
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+}
+
+.navbar__list--item > img {
+  padding-top: 1rem;
+}
+
+/* ----------------------------------------- Navbar area ends here --------------------------------------- */
+/* ----------------------------------------- Header area starts here --------------------------------------- */
+
+.header {
+  position: relative;
+  background-image: url("./images/main_bg.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40rem;
+}
+
+.tns-nav {
+  display: block;
+  width: 10rem;
+  top: 43rem;
+  position: absolute;
+  right: 20rem;
+  z-index: 100;
+}
+
+.tns-nav > button {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  outline: none;
+  border: none;
+  background-color: silver;
+  margin-right: 0.5rem;
+}
+
+.tns-nav-active {
+  background-color: rgb(116, 116, 116) !important;
+}
+
+.header-text {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+  position: absolute;
+  top: 2rem;
+  right: 28%;
+  z-index: 1000;
+}
+
+div#tns1-iw.tns-inner{
+  margin: 0px 300px!important;
+}
+
+.tns-slide-active {
+  position: relative;
+}
+
+.tns-slide-active > .header-text {
+  right: 54%;
+}
+
+.header-title {
+  text-transform: uppercase;
+  color: green;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.header-para > p {
+  text-transform: capitalize;
+  color: var(--secondary-color);
+  font-size: 1.7rem;
+}
+
+.btn {
+  outline: green;
+  border: 2px solid green;
+  background-color: white;
+}
+
+.learn-more {
+  width: 15rem;
+  height: 3rem;
+  color: green;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  margin-top: 50%;
+}
+
+.header-text > .learn-more {
+  justify-self: self-end;
+}
+
+/* ----------------------------------------- Header area ends here --------------------------------------- */
+
+.lifestyle {
+  width: 70vw;
+  min-height: 40vh;
+  margin: 1rem auto;
+  padding: 3rem;
+  border: 1px solid silver;
+  background: linear-gradient(to bottom, #fff, #f0f0f0);
+  margin-bottom: 3rem;
+}
+
+.lifestyle > h1 {
+  color: var(--primary-color);
+  text-transform: uppercase;
+  line-height: 5rem;
+  border-bottom: 2px solid var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.content-area {
+  height: 70%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card-area > p {
+  margin: 1rem 0;
+  font-size: 1.6rem;
+  color: var(--secondary-color);
+}
+
+.card-area:nth-child(1) {
+  width: 40%;
+  border-right: 1px solid var(--secondary-color);
+  padding: 1rem;
+}
+
+.two-cards {
+  padding: 1rem;
+  float: left;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.two-cards > .card-area {
+  margin-right: 1rem;
+}
+
+.two-cards:nth-child(1) {
+  border-right: 1px solid var(--secondary-color) !important;
+}
+
+.two-cards > h1 {
+  color: grey;
+  width: 100%;
+  font-size: 1.8rem;
+}
+
+.card-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 15rem;
+}
+
+.card-area > h2 {
+  font-size: 1.6rem;
+  color: green;
+}
+
+.card-area > p {
+  font-size: 1.35rem;
+  width: fit-content;
+}
+
+.card-area > .btn {
+  margin-top: 1rem;
+}
+
+.card-area > p > .read-more{
+  font-size: 1.3rem;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+/* Lifestyle ends here */
+
+.customer {
+  width: 73vw;
+  margin: 1rem auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.our-customers {
+  width: 60%;
+}
+
+.our-customers > h1 {
+  font-size: 3rem;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  line-height: 5rem;
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.our-customers > p {
+  padding: 1rem 0;
+  color: var(--secondary-color);
+}
+
+.our-customers > p > .read-more{
+  font-size: 1.3rem;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.our-customer-images > img {
+  width: 20rem;
+  height: 14rem;
+  margin-right: 1rem;
+}
+
+.news {
+  width: 30%;
+}
+
+.media {
+  display: flex;
+  width: 70vw;
+  margin: 1rem auto;
+  background: linear-gradient(to bottom, #fff, #f0f0f0);
+  border: 1px solid var(--secondary-color);
+  padding: 1rem 3rem;
+  justify-content: space-around;
+}
+
+.media > div {
+  width: 40%;
+}
+
+.media > div > .heading > h1 {
+  color: var(--primary-color);
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  border-bottom: 2px solid var(--primary-color);
+  line-height: 5rem;
+}
+
+.media > div > .grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 3rem 0;
+}
+
+.media > div > .grid > img {
+  width: 45%;
+  /* height: 20rem; */
+  box-shadow: 1px 1px 10px 0 var(--secondary-color);
+  margin: 1rem;
+  object-fit: fill;
+}
+
+.media > div > .content > p {
+  font-size: 1.6rem;
+  color: var(--secondary-color);
+}
+
+.footer {
+  display: flex;
+  height: 10vh;
+  padding: 2rem 0;
+  justify-content: space-around;
+  background-color: rgb(82, 82, 82);
+}
+
+footer > .footer__list {
+  display: flex;
+  color: rgb(180, 180, 180);
+  justify-content: space-evenly;
+}
+
+footer > .footer__list > .footer__list--item {
+  margin-right: 2rem;
+}
