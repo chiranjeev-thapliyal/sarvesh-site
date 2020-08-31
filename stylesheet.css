@@ -21,6 +21,13 @@ body {
   --secondary-color: #808088;
 }
 
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
 /* ----------------------------------------- Navbar area starts here --------------------------------------- */
 
 .navbar {
@@ -49,6 +56,11 @@ body {
   color: var(--secondary-color);
   font-weight: 500;
   letter-spacing: 0.2rem;
+}
+
+.navbar__list--item > a{
+  color: var(--secondary-color);
+  font-weight: 700;
 }
 
 .navbar__list--item > img {
@@ -84,6 +96,10 @@ body {
   border: none;
   background-color: silver;
   margin-right: 0.5rem;
+}
+
+.tns-outer > button[data-action="stop"]{
+  display: none ;
 }
 
 .tns-nav-active {
@@ -359,14 +375,17 @@ div#tns1-iw.tns-inner{
 /* Demo testing */
 
 .modal__Box{
+  background-color: rgba(0, 0, 0, 0.773);
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.773);
-  position: absolute;
+  position: fixed;
+  top: 0;
+  bottom: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   display: none;
+  transition: all .5s ease-in-out;
 }
 
 .modal__Box--content{
@@ -400,6 +419,22 @@ div#tns1-iw.tns-inner{
   right: -1rem;
   cursor: pointer;
 }
+
+.modal__Box > button{
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  border: none;
+  font-size: 1.6rem;
+  color: gray;
+  cursor: pointer;
+  margin: 0 1rem;
+}
+
 
 /* Demo testing */
 

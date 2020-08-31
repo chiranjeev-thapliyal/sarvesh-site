@@ -13,7 +13,6 @@ closeBtn.addEventListener("click", () => {
 function nextImg(){
     var modalActiveImg = document.querySelector(".modal-active-image");
     var id = modalActiveImg.getAttribute('id');
-    console.log(id.substr(-1));
     let currSlide = Number(id.substr(-1));
     if(currSlide < images.length-1){
         modalBoxContentIMG.innerHTML = `<img class="modal-active-image" id="pic-${currSlide+1}" src="${images[currSlide+1].src}">`;
@@ -25,7 +24,6 @@ function nextImg(){
 function nextVid(){
     var modalActiveImg = document.querySelector(".modal-active-image");
     var id = modalActiveImg.getAttribute('id');
-    console.log(id.substr(-1));
     let currSlide = Number(id.substr(-1));
     if(currSlide < images.length-1){
         modalBoxContentIMG.innerHTML = `<img class="modal-active-image" id="video-${currSlide+1}" src="${images[currSlide+1].src}">`;
@@ -37,7 +35,6 @@ function nextVid(){
 function prevImg(){
     var modalActiveImg = document.querySelector(".modal-active-image");
     var id = modalActiveImg.getAttribute('id');
-    console.log(id.substr(-1));
     let currSlide = Number(id.substr(-1));
     if(currSlide > 0){
         modalBoxContentIMG.innerHTML = `<img class="modal-active-image" id="pic-${currSlide-1}" src="${images[currSlide-1].src}">`;
@@ -49,7 +46,6 @@ function prevImg(){
 function prevVid(){
     var modalActiveImg = document.querySelector(".modal-active-image");
     var id = modalActiveImg.getAttribute('id');
-    console.log(id.substr(-1));
     let currSlide = Number(id.substr(-1));
     if(currSlide > 0){
         modalBoxContentIMG.innerHTML = `<img class="modal-active-image" id="video-${currSlide-1}" src="${images[currSlide-1].src}">`;
@@ -66,4 +62,24 @@ function openModal(name){
 function changeModal(img){
     // var name = img.src;
     openModal(img);
+}
+
+function prev(e){
+    var modalActiveImg = document.querySelector(".modal-active-image");
+    var id = modalActiveImg.getAttribute('id');
+    if(id.charAt(0) == 'p'){
+        prevImg();
+    }else{
+        prevVid();
+    }
+}
+
+function next(e){
+    var modalActiveImg = document.querySelector(".modal-active-image");
+    var id = modalActiveImg.getAttribute('id');
+    if(id.charAt(0) == 'p'){
+        nextImg();
+    }else{
+        nextVid();
+    }
 }

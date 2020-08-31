@@ -21,10 +21,10 @@
         <li class="navbar__list--item">
           <img src="./images/logo.png" alt="logo" />
         </li>
-        <li class="navbar__list--item">Products</li>
-        <li class="navbar__list--item">Customers</li>
-        <li class="navbar__list--item">News + Events</li>
-        <li class="navbar__list--item">About Us</li>
+        <li class="navbar__list--item"><a href="#">Products</a></li>
+        <li class="navbar__list--item"><a href="#">Customers</a></li>
+        <li class="navbar__list--item"><a href="#">News + Events</a></li>
+        <li class="navbar__list--item"><a href="#">About Us</a></li>
       </ul>
     </div>
 
@@ -143,6 +143,7 @@
     </section>
 
     <section class="modal__Box">
+      <button onclick="prev(this)" class="prev-btn"> < </button>
       <div class="modal__Box--content">
         <h2>The title for the image goes here</h2>
         <img class="close-modal" src="./images/close.png" alt="">
@@ -150,6 +151,7 @@
           <!-- <img class="modal-active-image" src="./images/full-photo.png" alt="" srcset=""> -->
         </div>
       </div>
+      <button onclick="next(this)" class="next-btn"> > </button>
     </section>
 
     <section class="media">
@@ -212,11 +214,12 @@
       let slider = tns({
         container: ".header",
         items: 1,
+        autoplay: true,
         edgePadding: 500,
         fixedWidth: 2000,
         swipeAngle: false,
         speed: 400,
-        controls: false,
+        controls: false
       });
     </script>
   </body>
