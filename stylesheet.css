@@ -230,7 +230,7 @@ div#tns1-iw.tns-inner{
 .card-area > p > .read-more{
   font-size: 1.3rem;
   color: var(--primary-color);
-  font-weight: bold;
+  font-weight: 500;
 }
 
 /* Lifestyle ends here */
@@ -262,7 +262,7 @@ div#tns1-iw.tns-inner{
 .our-customers > p > .read-more{
   font-size: 1.3rem;
   color: var(--primary-color);
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .our-customer-images > img {
@@ -273,6 +273,45 @@ div#tns1-iw.tns-inner{
 
 .news {
   width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.news > h1 {
+  font-size: 3rem;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  line-height: 5rem;
+  border-bottom: 2px solid var(--primary-color);
+}
+.news > div{    
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 40%;
+}
+
+.news > div > h1{
+  font-size: 1.6rem;
+  color: var(--primary-color);
+}
+
+.news > div > h2{
+  color: var(--secondary-color);
+  margin-top: -1.5rem;
+}
+
+.news > div > p{
+  font-size: 1.35rem;
+  color: var(--secondary-color);
+}
+
+
+.news > div > p > .continue-reading{
+  font-size: 1.3rem;
+  color: var(--primary-color);
+  font-weight: 500;
 }
 
 .media {
