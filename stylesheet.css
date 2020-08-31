@@ -103,6 +103,11 @@ body {
   display: none ;
 }
 
+.tns-outer > button[data-action="start"]{
+  display: none ;
+}
+
+
 .tns-nav-active {
   background-color: rgb(116, 116, 116) !important;
 }
