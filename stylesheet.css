@@ -419,6 +419,11 @@ div#tns1-iw.tns-inner{
   height: 100%;
 }
 
+.modal__Box--content-active-img > iframe{
+  width: 40vw;
+  height: 50vh;
+}
+
 .modal__Box--content > img{
   position: absolute;
   top: -1rem;
